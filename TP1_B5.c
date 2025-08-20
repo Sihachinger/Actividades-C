@@ -12,4 +12,5 @@ int main () {
     perimetro = cateto1 + cateto2 + hipotenusa;
     superficie = (cateto1 * cateto2) / 2;
     printf("La hipotenusa es %.2f, el perímetro es %.2f y la superficie es %.2f\n", hipotenusa, perimetro, superficie);
+    return 0;
 }

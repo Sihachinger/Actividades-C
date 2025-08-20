@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 int main () {
-    int num1, num2, suma, validacion;
+    int num1, num2;
+    char validacion;
     printf("Ejercicio 1: Sumar dos valores enteros\n");
-    do {
+    while (1) {
         printf("Ingrese dos valores enteros: ");
-        validacion = scanf("%d %d", &num1, &num2);
-        if (validacion != 2)
-        {
-            printf("Los números ingresados no son enteros, intentelo nuevamente.");
+        if (scanf("%d %d%c", &num1, &num2, &validacion) == 3 && validacion == '\n') {
+            break;
+        } else {
+            printf("Entrada inválida. Asegúrese de ingresar dos enteros sin decimales.\n");
             while (getchar() != '\n');
         }
-    } while (validacion != 2);
-    suma = num1 + num2;
-    printf("La suma de %d y %d es %d\n", num1, num2, suma);
+    }
+    printf("La suma de %d y %d es %d\n", num1, num2, num1 + num2);
     return 0;
 }

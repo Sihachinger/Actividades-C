@@ -6,8 +6,14 @@ int main () {
     float precio_vehiculo, sueldo_vendedor;
     int cantidad_vendidos;
     printf("Ejercicio 10: Calcular sueldo de un vendedor de autos\n");
-    printf("Ingrese el precio del vehículo y la cantidad vendida: ");
-    scanf("%f %d", &precio_vehiculo, &cantidad_vendidos);
+    do {
+        printf("Ingrese el precio del vehículo y la cantidad vendida separados por un espacio: ");
+        validacion = scanf("%f %d", &precio_vehiculo, &cantidad_vendidos);
+        if (validacion != 2 || cantidad_vendidos < 0) {
+            printf("La cantidad ingresada no es válida, intentelo nuevamente.\n");
+            while (getchar() != '\n');
+        }
+    } while (validacion != 2 || cantidad_vendidos < 0);
     sueldo_vendedor = 500 + (0.1 * precio_vehiculo * cantidad_vendidos) + (50 * cantidad_vendidos);
     printf("El sueldo del vendedor es %f pesos, habiendo vendido %d\n", sueldo_vendedor, cantidad_vendidos);
     return 0;

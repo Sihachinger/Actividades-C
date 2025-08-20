@@ -9,6 +9,6 @@ int main () {
     printf("Ingrese el precio del vehículo y la cantidad vendida: ");
     scanf("%f %d", &precio_vehiculo, &cantidad_vendidos);
     sueldo_vendedor = 500 + (0.1 * precio_vehiculo * cantidad_vendidos) + (50 * cantidad_vendidos);
-    printf("El sueldo del vendedor es %d pesos, habiendo vendido %d\n", sueldo_vendedor, cantidad_vendidos);
+    printf("El sueldo del vendedor es %f pesos, habiendo vendido %d\n", sueldo_vendedor, cantidad_vendidos);
     return 0;
 }

@@ -7,7 +7,8 @@ int main () {
     printf("Ejercicio 2: Sumar tres valores\n");
     printf("Ingrese tres valores enteros: ");
     scanf("%d %d %d", &num1, &num2, &num3);
-    suma_total = num1 + num2 + num3;
+    suma_total = num1 + num2;
+    suma_total = suma_total + num3;
     printf("La suma total de %d, %d y %d es %d\n\n", num1, num2, num3, suma_total);
     return 0;
 }

@@ -7,8 +7,8 @@ int main () {
     float sueldo, horas;
     printf("Ejercicio 9: Calcular sueldo de un operario con valor de 10 pesos la hora\n");
     printf("Ingrese el tiempo trabajado (en horas): ");
-    scanf("%d", &horas);
-    float sueldo = valor_hora * horas;
-    printf("El sueldo del operario es %.2f pesos\n\n", sueldo);
+    scanf("%f", &horas);
+    sueldo = valor_hora * horas;
+    printf("El sueldo del operario es %.2f pesos\n", sueldo);
     return 0;
 }

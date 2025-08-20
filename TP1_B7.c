@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main () {
-    int num1, num2, suma, producto, resta;
+    float num1, num2, suma, producto, resta;
     printf("Ejercicio 7: Calcular suma, producto y resta de dos valores\n");
     printf("Ingrese dos valores: ");
     scanf("%f %f", &num1, &num2);

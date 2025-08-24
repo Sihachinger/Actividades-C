@@ -5,7 +5,7 @@
 int main () {
     float num1, num2, num3, suma_total;
     printf("Ejercicio 2: Sumar tres valores\n");
-    printf("Ingrese tres valores enteros: ");
+    printf("Ingrese tres valores: ");
     scanf("%d %d %d", &num1, &num2, &num3);
     suma_total = num1 + num2;
     suma_total = suma_total + num3;

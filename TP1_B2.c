@@ -1,4 +1,4 @@
-// B2. Ingresar tres valores, imprimir la suma total, sólo sabe sumar de a dos.
+// B2. Ingresar tres valores, imprimir la suma total, sólo sabe sumar de a dos operandos a la vez.
 
 #include <stdio.h>
 

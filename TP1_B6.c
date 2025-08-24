@@ -1,4 +1,4 @@
-// B6. Ingresar los lados de un rectángulo y calcular su diagonal principal, superficie y perímetro.
+// B6. Ingresar los lados de un rectángulo y calcular su diagonal principal, superficie y perímetro. Imprima los resultados solicitados.
 
 #include <stdio.h>
 #include <math.h>

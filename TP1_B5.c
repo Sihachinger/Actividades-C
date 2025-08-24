@@ -1,4 +1,4 @@
-// 5. Ingresar dos lados de un triángulo rectángulo y calcular la hipotenusa, el perímetro, la superficie.
+// 5. Ingresar dos lados de un triángulo rectángulo y calcular la hipotenusa, el perímetro, la superficie. Imprima los resultados solicitados.
 
 #include <stdio.h>
 #include <math.h>

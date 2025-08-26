@@ -5,19 +5,40 @@ imprimirlo.*/
 
 #include <stdio.h>
 
+// Validación para que se ingrese un float correctamente, es decir, un número real positivo
+float pedir_precio_vehiculo() {
+    float precio;
+    int validacion;
+    printf("Ingrese el precio del vehículo: ");
+    validacion = scanf("%f", &precio);
+    while (validacion != 1 || precio < 0) {
+        printf("Precio inválido. Intente nuevamente.\n");
+        while (getchar() != '\n');
+        printf("Ingrese el precio del vehículo: ");
+        validacion = scanf("%f", &precio);
+    }
+    return precio;
+}
+
+// Validación para que se ingrese un int correctamente, es decir, un número entero positivo
+int pedir_cantidad_vendida() {
+    int cantidad, validacion;
+    printf("Ingrese la cantidad vendida: ");
+    validacion = scanf("%d", &cantidad);
+    while (validacion != 1 || cantidad < 0) {
+        printf("Cantidad inválida. Intente nuevamente.\n");
+        while (getchar() != '\n');
+        printf("Ingrese la cantidad vendida: ");
+        validacion = scanf("%d", &cantidad);
+    }
+    return cantidad;
+}
+
 int main () {
-    float precio_vehiculo, sueldo_vendedor;
-    int cantidad_vendidos;
     printf("Ejercicio 10: Calcular sueldo de un vendedor de autos\n");
-    do {
-        printf("Ingrese el precio del vehículo y la cantidad vendida separados por un espacio: ");
-        validacion = scanf("%f %d", &precio_vehiculo, &cantidad_vendidos);
-        if (validacion != 2 || cantidad_vendidos < 0) {
-            printf("La cantidad ingresada no es válida, intentelo nuevamente.\n");
-            while (getchar() != '\n');
-        }
-    } while (validacion != 2 || cantidad_vendidos < 0);
-    sueldo_vendedor = 500 + (0.1 * precio_vehiculo * cantidad_vendidos) + (50 * cantidad_vendidos);
-    printf("El sueldo del vendedor es %f pesos, habiendo vendido %d\n", sueldo_vendedor, cantidad_vendidos);
+    float precio_vehiculo = pedir_precio_vehiculo();
+    int cantidad_vendidos = pedir_cantidad_vendida();
+    float sueldo_vendedor = 500 + (0.1f * precio_vehiculo * cantidad_vendidos) + (50 * cantidad_vendidos);
+    printf("El sueldo del vendedor es %.2f pesos, habiendo vendido %d vehículos.\n", sueldo_vendedor, cantidad_vendidos);
     return 0;
 }

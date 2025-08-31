@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 int main() {
+    float valor_hora, tiempo_trabajado, sueldo;
     printf("Ejercicio 8: Calcular salario de un operario\n");
-    float tiempo_trabajado, valor_hora, sueldo;
     printf("Ingrese el tiempo trabajado (en horas): ");
     scanf("%f", &tiempo_trabajado);
     printf("Ingrese el valor por hora: ");

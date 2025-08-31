@@ -8,6 +8,6 @@ int main () {
     printf("Ingrese tres valores enteros: ");
     scanf("%f %f %f", &num1, &num2, &num3);
     suma_total = num1 + num2 + num3;
-    printf("La suma total de %.2f, %.2f y %.f2 es %.f2\n", num1, num2, num3, suma_total);
+    printf("La suma total de %.2f, %.2f y %.2f es %.2f\n", num1, num2, num3, suma_total);
     return 0; 
 }

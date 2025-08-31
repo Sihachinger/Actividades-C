@@ -1,4 +1,4 @@
-// Ingresar el valor de la hora y el tiempo trabajado de un operario, calcular su sueldo e imprimirlo.
+// B8. Ingresar el valor de la hora y el tiempo trabajado de un operario, calcular su sueldo e imprimirlo.
 
 #include <stdio.h>
 

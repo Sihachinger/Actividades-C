@@ -22,6 +22,7 @@ int main() {
 /*
 3           Incluir Bibliotecas
 5           Inicio del programa
+6           Declarar variables 
 8 - 11      Imprimir y pedir los valores
 13 - 17     Comparar los valores e imprimir el resultado
 19          Return

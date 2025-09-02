@@ -1,0 +1,1 @@
+// 6. Ingresar la edad y la altura de dos personas, indicar e imprimir la estatura del de mayor edad.

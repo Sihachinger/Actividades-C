@@ -1,0 +1,1 @@
+//3. Ingresar los tres lados de un triangulo e indicar que tipo de triangulo es.

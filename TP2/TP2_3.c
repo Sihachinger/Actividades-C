@@ -22,3 +22,12 @@ int main() {
 
     return 0;
 }
+
+/*
+3           Incluir Bibliotecas
+5           Inicio del programa
+8 - 13      Imprimir y pedir los lados
+15 - 21     Analizar los lados e imprimir el resultado
+23          Return
+24          Fin del programa
+*/

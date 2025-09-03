@@ -5,14 +5,8 @@
 int main() {
     float valor1, valor2, valor3, valor4;
 
-    printf("Ingrese el primer valor: ");
-    scanf("%f", &valor1);
-    printf("Ingrese el segundo valor: ");
-    scanf("%f", &valor2);
-    printf("Ingrese el tercer valor: ");
-    scanf("%f", &valor3);
-    printf("Ingrese el cuarto valor: ");
-    scanf("%f", &valor4);
+    printf("Ingrese cuatro valores separados por un espacio: ");
+    scanf("%f %f %f %f", &valor1, &valor2, &valor3, &valor4);
 
     if ((valor1 + valor2) > (valor3 + valor4)) {
         printf("La suma de \"%.2f\" y \"%.2f\" es mayor.\n", valor1, valor2);
@@ -27,8 +21,8 @@ int main() {
 3           Incluir Bibliotecas
 5           Inicio del programa
 6           Declarar variables
-8 - 15      Imprimir y pedir los valores
-17 - 21     Calcular la suma e imprimir el resultado
-23          Return
-24          Fin del programa
+8 - 9       Imprimir y pedir los valores
+11 - 15     Calcular la suma e imprimir el resultado
+17          Return
+18          Fin del programa
 */

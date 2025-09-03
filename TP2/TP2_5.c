@@ -22,7 +22,7 @@ int main() {
 5           Inicio del programa
 6           Declarar variables
 8 - 9       Imprimir y pedir los valores
-11 - 15     Calcular la suma e imprimir el resultado
+11 - 15     Calcular la suma e imprimir el resultado de la mayor de las sumas
 17          Return
 18          Fin del programa
 */

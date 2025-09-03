@@ -5,12 +5,8 @@
 int main() {
     float valor1, valor2, valor3, promedio;
 
-    printf("Ingrese el primer valor: ");
-    scanf("%f", &valor1);
-    printf("Ingrese el segundo valor: ");
-    scanf("%f", &valor2);
-    printf("Ingrese el tercer valor: ");
-    scanf("%f", &valor3);
+    printf("Ingrese los valores separados por espacios: ");
+    scanf("%f %f %f", &valor1, &valor2, &valor3);
 
     promedio = (valor1 + valor2 + valor3) / 3;
     printf("El promedio es: %.2f\n", promedio);
@@ -32,9 +28,9 @@ int main() {
 3           Incluir Bibliotecas
 5           Inicio del programa
 6           Declarar variables
-8 - 13      Imprimir y pedir los valores
-15 - 16     Calcular el promedio e imprimir el resultado
-18 - 26     Analizar los valores e imprimir los que son mayores al promedio
-28          Return
-21          Fin del programa
+8 - 9       Imprimir y pedir los valores
+11 - 12     Calcular el promedio e imprimir el resultado
+14 - 22     Analizar los valores e imprimir los que son mayores al promedio
+24          Return
+25          Fin del programa
 */

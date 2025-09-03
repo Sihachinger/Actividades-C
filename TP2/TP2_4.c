@@ -17,11 +17,9 @@ int main() {
 
     if (valor1 > promedio) {
         printf("El primer valor es mayor al promedio.\n");
-    }
-    if (valor2 > promedio) {
+    } else if (valor2 > promedio) {
         printf("El segundo valor es mayor al promedio.\n");
-    }
-    if (valor3 > promedio) {
+    } else if (valor3 > promedio) {
         printf("El tercer valor es mayor al promedio.\n");
     }
 

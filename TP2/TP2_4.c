@@ -17,9 +17,11 @@ int main() {
 
     if (valor1 > promedio) {
         printf("El primer valor es mayor al promedio.\n");
-    } else if (valor2 > promedio) {
+    }
+    if (valor2 > promedio) {
         printf("El segundo valor es mayor al promedio.\n");
-    } else if (valor3 > promedio) {
+    }
+    if (valor3 > promedio) {
         printf("El tercer valor es mayor al promedio.\n");
     }
 
@@ -34,5 +36,5 @@ int main() {
 15 - 16     Calcular el promedio e imprimir el resultado
 18 - 26     Analizar los valores e imprimir los que son mayores al promedio
 28          Return
-29          Fin del programa
+21          Fin del programa
 */

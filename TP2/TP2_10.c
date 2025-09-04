@@ -19,8 +19,6 @@ int main() {
     for (int i = 0; i < cantidad_trabajadores; i++) {
         if (antiguedad[i] >= 5) {
             printf("Trabajador %d: %s, Sueldo: %.2f, Categoría: %d, Antigüedad: %d años\n", i + 1, nombre[i], sueldo[i], categoria[i], antiguedad[i]);
-        } else {
-            printf("Trabajador %d: %s no tiene más de 5 años de antigüedad.\n", i + 1, nombre[i]);
         }
     }
 

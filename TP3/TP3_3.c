@@ -1,21 +1,32 @@
 //Ingresar 8 valores por teclado, y a partir de esto sacar el promedio general, sacar el promedio de los valores pares y el promedio de los valores impares. Luego mostrar por pantalla cuantos números superaron el valor 15.
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
-    float valor, promedioGeneral, promedioPares, promedioInpares, superiores;
+    int valor;
+    float promedioGeneral, promedioPares, promedioInpares, superiores;
     for (int i = 0; i < 10; i++){
-        printf("Ingrese el número %d: ", i);
-        scanf("%f", &valor);
-        if (valor > 15) {
+        printf("Ingrese el número %d: ", i + 1);
+
+        // Validar que se ingrese un número entero con isdigit función de ctype.h que verifica si el carácter es un dígito entre '0' y '9'.
+        scanf("%d", &valor);
+        if (isdigit(valor)){
+            if (valor > 15) {
             superiores++;
-        }
-        if (valor % 2 == 0) {
-            promedioPares += valor;
+            }
+            //No me deja utilizar el operador ya que es un float y c no me lo deja hacer.
+            if (valor % 2 == 0) {
+                promedioPares += valor;
+            } else {
+                promedioInpares += valor;
+            }
+            promedioGeneral += valor;
         } else {
-            promedioInpares += valor;
+            printf("El valor ingresado no es valido, por favor ingrese números enteros.\n");
+            i--;
+            continue;
         }
-        promedioGeneral += valor;
     } 
 
     printf("El promedio general es: %f", promedioGeneral);

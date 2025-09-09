@@ -1,0 +1,1 @@
+//Ingresar 25 números, calcular su promedio e imprimirlo

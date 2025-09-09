@@ -1,0 +1,1 @@
+//Ingresar30 valores. Contar cuantos están entre 1 y 10, cuantos entre 10 y 20, cuantos entre 20 y 30 y cuantos son más de 30. Luego mostrar el porcentaje de cada grupo en el total.

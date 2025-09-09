@@ -14,10 +14,10 @@ int main() {
             sueldo = horas * 50;
             break;
         case 2:
-            sueldo = 70 * 50;
+            sueldo = horas * 70;
             break;
         case 3:
-            sueldo = 80 * 50;
+            sueldo = horas * 80;
             break;
         default:
             printf("Categoria no valida.\n");

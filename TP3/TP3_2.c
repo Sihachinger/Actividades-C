@@ -15,4 +15,14 @@ int main () {
             ceros++;
         }
     }
+    return 0;
 }
+
+/*
+1       Enunciado
+3       Bibliotecas
+5       Funcion main
+6       Declaracion de variables
+7-17    Ingreso de datos y conteo de positivos, negativos y ceros
+19      Fin del programa
+*/

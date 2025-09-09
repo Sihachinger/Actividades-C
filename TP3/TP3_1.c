@@ -5,7 +5,7 @@
 int main() {
     float promedio, numero, suma = 0;
     for (int i = 0; i < 25; i++) {
-        printf("Ingrese un numero: ");
+        printf("Ingrese un numero %d: ", i);
         scanf("%f", &numero);
         suma += numero;
     }

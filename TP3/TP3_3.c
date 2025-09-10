@@ -11,6 +11,7 @@ int main() {
 
         // Validar que se ingrese un número entero con isdigit función de ctype.h que verifica si el carácter es un dígito entre '0' y '9'.
         scanf("%d", &valor);
+
         if (isdigit(valor)){
             if (valor > 15) {
             superiores++;

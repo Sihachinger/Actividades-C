@@ -42,11 +42,7 @@ int main() {
             mayor30++;
         } else if (valor <= 0) {
             menorIgual0++;
-        } else {
-            printf("El valor ingresado no es valido, por favor ingrese números enteros.\n");
-            i--;
-            continue;
-        }
+        } 
     }
     printf("Hay %d valores entre 1 y 10, con un porcentaje de %.2f%%\n", entre1y10, (entre1y10 / 30.0)*100 );
     printf("Hay %d valores entre 11 y 20, con un porcentaje de %.2f%%\n", entre11y20, (entre11y20 / 30.0)*100);

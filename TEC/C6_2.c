@@ -1,17 +1,15 @@
-//Un algoritmo para otener la suma de diez cantidades mediante la utilizacion de un iclo do While
+// Un algoritmo para obtener la suma de diez cantidades mediante la utilizacion de un ciclo For
 
 #include <stdio.h>
 
 int main() {
-    int i = 0;
     float numero, suma = 0;
 
-    do {
+    for (int i = 0; i < 10; i++) {
         printf("Ingrese el número %d: ", i + 1);
         scanf("%f", &numero);
         suma += numero;
-        i++;
-    } while (i < 10);
+    }
 
     printf("La suma de las diez cantidades es: %.2f\n", suma);
     return 0;

@@ -18,9 +18,22 @@ int main() {
     printf("Trabajadores con más de 5 años de antigüedad:\n");
     for (int i = 0; i < cantidad_trabajadores; i++) {
         if (antiguedad[i] >= 5) {
+            if (categoria[i] == 1) {
+                sueldo[i] += 50 * antiguedad[i];
+            }
             printf("Trabajador %d: %s, Sueldo: %.2f, Categoría: %d, Antigüedad: %d años\n", i + 1, nombre[i], sueldo[i], categoria[i], antiguedad[i]);
         }
     }
 
     return 0;
 }
+
+/*
+3           Incluir Bibliotecas
+5           Inicio del programa
+6 - 9       Declarar variables
+11 - 12     Imprimir y pedir los valores
+18 - 23     Imprimir el sueldo final
+15          Return
+26          Fin del programa
+*/

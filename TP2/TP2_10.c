@@ -2,38 +2,25 @@
 
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main() {
-    int cantidad_trabajadores;
-    char nombre[100][50];
-    float sueldo[100];
-    int categoria[100], antiguedad[100];
+    float sueldo, sueldoFinal;
+    int categoria, antiguedad;
 
-    printf("Ingrese la cantidad de trabajadores: \n");
-    scanf("%d", &cantidad_trabajadores);
+    printf("Ingrese el sueldo del empleado, seguido de la categoria (1-3) y la antiguedad (en años) todo separado por espacios: ");
+    scanf("%f %d %d", &sueldo, &categoria, &antiguedad);
 
-    for (int i = 0; i < cantidad_trabajadores; i++) {
-        printf("Ingrese el nombre, sueldo, categoría y antigüedad del trabajador %d separado por espacios:\n", i + 1);
-        scanf("%s %f %d %d", nombre[i], &sueldo[i], &categoria[i], &antiguedad[i]);
-    }
-    printf("Trabajadores con más de 5 años de antigüedad:\n");
-    for (int i = 0; i < cantidad_trabajadores; i++) {
-        if (antiguedad[i] >= 5) {
-            if (categoria[i] == 1) {
-                sueldo[i] += 50 * antiguedad[i];
-            }
-            printf("Trabajador %d: %s, Sueldo: %.2f, Categoría: %d, Antigüedad: %d años\n", i + 1, nombre[i], sueldo[i], categoria[i], antiguedad[i]);
-        }
+    if (categoria == 1) {
+        sueldoFinal = sueldo + (50 * antiguedad);
+    } else {
+        sueldoFinal = sueldo;
     }
 
+    if (antiguedad > 5) {
+        printf("El empleado tiene más de 5 años de antigüedad.\n");
+    }
+
+    printf("El sueldo final del empleado es: %.2f\n", sueldoFinal);
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6 - 9       Declarar variables
-11 - 12     Imprimir y pedir los valores
-18 - 23     Imprimir el sueldo final
-15          Return
-26          Fin del programa
-*/

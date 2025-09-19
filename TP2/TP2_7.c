@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main() {
-    float valor_hora, tiempo_trabajado, sueldo;
+    float valor_hora, tiempoTrabajado, sueldo;
 
     printf("Ingrese el valor de la hora: ");
     scanf("%f", &valor_hora);
     printf("Ingrese el tiempo trabajado en horas: ");
-    scanf("%f", &tiempo_trabajado);
+    scanf("%f", &tiempoTrabajado);
 
-    if (valor_hora > 0 && tiempo_trabajado > 0) {
-        sueldo = valor_hora * tiempo_trabajado;
+    if (valor_hora > 0 && tiempoTrabajado > 0) {
+        sueldo = valor_hora * tiempoTrabajado;
 
-        if (tiempo_trabajado > 150) {
+        if (tiempoTrabajado > 150) {
             sueldo += 200;
-        } else if (tiempo_trabajado > 50) {
+        } else if (tiempoTrabajado > 50) {
             sueldo += 100;
         }
 

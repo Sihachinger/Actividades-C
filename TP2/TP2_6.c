@@ -23,13 +23,3 @@ int main() {
 
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6 - 7       Declarar variables
-9 - 12      Imprimir y pedir los valores
-14 - 22     Comparar edades para mostrar la altura del mayor
-24          Return
-25          Fin del programa
-*/

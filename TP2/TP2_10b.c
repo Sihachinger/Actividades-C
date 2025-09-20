@@ -27,13 +27,3 @@ int main() {
 
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6 - 9       Declarar variables
-11 - 12     Imprimir y pedir los valores
-18 - 26     Imprimir el sueldo final
-28          Return
-29          Fin del programa
-*/

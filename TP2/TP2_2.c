@@ -18,13 +18,3 @@ int main() {
 
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6           Declarar variables
-8 - 9       Leer el valor
-11 - 17     Analizar el valor e imprimir el resultado
-19          Return
-20          Fin del programa
-*/

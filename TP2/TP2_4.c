@@ -23,14 +23,3 @@ int main() {
 
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6           Declarar variables
-8 - 9       Imprimir y pedir los valores
-11 - 12     Calcular el promedio e imprimir el resultado
-14 - 22     Analizar los valores e imprimir los que son mayores al promedio
-24          Return
-25          Fin del programa
-*/

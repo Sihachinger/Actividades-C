@@ -18,13 +18,3 @@ int main() {
 
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6           Declarar variables
-8 - 9       Imprimir y pedir los valores
-11 - 17     Calcular la suma e imprimir el resultado de la mayor de las sumas
-19          Return
-20          Fin del programa
-*/

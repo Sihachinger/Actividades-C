@@ -18,14 +18,3 @@ int main() {
     printf("El sueldo final del empleado es: %.2f\n", sueldoFinal);
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6 - 7       Declarar variables
-9 - 10      Imprimir y pedir los valores
-12 - 16     Calcular el sueldo final
-18          Imprimir el sueldo final
-19          Return
-20          Fin del programa
-*/

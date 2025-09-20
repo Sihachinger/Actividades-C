@@ -38,17 +38,3 @@ int main() {
     printf("El dia es un %d\n de %d de %d", dia, mes, anio);
     return 0;
 }
-
-/*
-3           Incluir Bibliotecas
-5           Inicio del programa
-6           Declarar variables
-8 - 9       Imprimir y pedir los valores
-11 - 14     Validar la entrada del año
-16 - 19     Validar la entrada del mes
-21 - 31     Control de años bisiestos
-33 - 36     Validar la entrada del día
-38          Imprimir el dia ya validado
-39          Return
-40          Fin del programa
-*/

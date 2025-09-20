@@ -35,6 +35,6 @@ int main() {
         return 0;
     }
 
-    printf("El dia es un %d\n de %d de %d", dia, mes, anio);
+    printf("La fecha %d / %d / %d es correcta", dia, mes, anio);
     return 0;
 }

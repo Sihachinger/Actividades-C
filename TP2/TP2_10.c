@@ -8,7 +8,7 @@ int main() {
     float sueldo, sueldoFinal;
     int categoria, antiguedad;
 
-    printf("Ingrese el sueldo del empleado, seguido de la categoria (1-3) y la antiguedad (en años) todo separado por espacios: ");
+    printf("Ingrese el sueldo del empleado, seguido de la categoria y la antiguedad (en años) todo separado por espacios: ");
     scanf("%f %d %d", &sueldo, &categoria, &antiguedad);
 
     if (categoria == 1) {

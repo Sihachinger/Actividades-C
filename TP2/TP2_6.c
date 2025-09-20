@@ -14,8 +14,10 @@ int main() {
     if (edad1 > 0 && altura1 > 0 && edad2 > 0 && altura2 > 0) {
         if (edad1 > edad2) {
             printf("La altura de la persona mayor es: %.2f\n", altura1);
-        } else {
+        } else if (edad2 > edad1) {
             printf("La altura de la persona mayor es: %.2f\n", altura2);
+        } else {
+            printf("Ambas personas tienen la misma edad. Sus alturas son: %.2f y %.2f\n", altura1, altura2);
         }
     } else {
         printf("Entrada no válida. Por favor, ingrese valores positivos.\n");

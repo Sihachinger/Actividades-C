@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 int main () {
-    int valor_hora = 10;
+    int valorHora = 10;
     float sueldo, horas;
     printf("Ejercicio 9: Calcular sueldo de un operario con valor de 10 pesos la hora\n");
     printf("Ingrese el tiempo trabajado (en horas): ");
     scanf("%f", &horas);
-    sueldo = valor_hora * horas;
+    sueldo = valorHora * horas;
     printf("El sueldo del operario es %.2f pesos\n", sueldo);
     return 0;
 }

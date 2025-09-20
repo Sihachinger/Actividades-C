@@ -6,7 +6,7 @@ int main() {
     float sueldo;
     int categoria, antiguedad, horas;
 
-    printf("Ingrese la categoría del empleado y las horas trabajadas, separado por espacios: ");
+    printf("Ingrese las horas trabajadas y la categoria separado por espacios: ");
     scanf("%f %d", &horas, &categoria);
 
     switch (categoria) {

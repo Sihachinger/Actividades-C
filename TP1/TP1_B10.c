@@ -6,7 +6,7 @@ imprimirlo.*/
 #include <stdio.h>
 
 // Validación para que se ingrese un float correctamente, es decir, un número real positivo
-float pedir_precioVehiculo() {
+float pedir_precio_vehiculo() {
     float precio;
     int validacion;
     printf("Ingrese el precio del vehículo: ");
@@ -36,7 +36,7 @@ int pedir_cantidad_vendida() {
 
 int main () {
     printf("Ejercicio 10: Calcular sueldo de un vendedor de autos\n");
-    float precioVehiculo = pedir_precioVehiculo();
+    float precioVehiculo = pedir_precio_vehiculo();
     int cantidadVendidos = pedir_cantidad_vendida();
     float sueldoVendedor = 500 + (0.1f * precioVehiculo * cantidadVendidos) + (50 * cantidadVendidos);
     printf("El sueldo del vendedor es %.2f pesos, habiendo vendido %d vehículos.\n", sueldoVendedor, cantidadVendidos);

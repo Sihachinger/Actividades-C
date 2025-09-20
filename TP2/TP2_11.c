@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 int main() {
-    float sueldo;
-    int categoria, antiguedad, horas;
+    float sueldo = 0;
+    int categoria, antiguedad, horas = 0;
 
     printf("Ingrese las horas trabajadas y la categoria separado por espacios: ");
-    scanf("%f %d", &horas, &categoria);
+    scanf("%d %d", &horas, &categoria);
 
     switch (categoria) {
         case 1:

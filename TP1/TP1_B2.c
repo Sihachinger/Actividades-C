@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 int main () {
-    float num1, num2, num3, suma_total;
+    float num1, num2, num3, sumaTotal;
     printf("Ejercicio 2: Sumar tres valores\n");
     printf("Ingrese tres valores: ");
     scanf("%f %f %f", &num1, &num2, &num3);
-    suma_total = num1 + num2;
-    suma_total = suma_total + num3;
-    printf("La suma total de %.2f, %.2f y %.2f es %.2f\n", num1, num2, num3, suma_total);
+    sumaTotal = num1 + num2;
+    sumaTotal = sumaTotal + num3;
+    printf("La suma total de %.2f, %.2f y %.2f es %.2f\n", num1, num2, num3, sumaTotal);
     return 0;
 }

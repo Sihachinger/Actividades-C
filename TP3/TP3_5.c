@@ -7,7 +7,7 @@ int main() {
     float monto, sumaTotal = 0, sumaSuperan40 = 0;
     int contadorSuperan40 = 0;
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 10; i++) {
         printf("Ingrese la patente del auto %d: ", i + 1);
         scanf("%s", patente);
         printf("Ingrese el monto de la multa numero %d: ", i + 1);
@@ -20,7 +20,7 @@ int main() {
         }
     }
 
-    float porcentajeSuperan40 = (sumaTotal > 0) ? (sumaSuperan40 / sumaTotal) * 100 : 0;
+    float porcentajeSuperan40 = (sumaTotal > 0) ? (sumaSuperan40  * 100) / sumaTotal : 0;
 
     printf("Cantidad de multas que superan los $40: %d\n", contadorSuperan40);
     printf("Porcentaje del total cobrado que representan las multas que superan los $40: %.2f\n", porcentajeSuperan40);

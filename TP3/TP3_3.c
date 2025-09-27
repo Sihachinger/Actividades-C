@@ -4,8 +4,8 @@
 #include <ctype.h>
 
 int main() {
-    int valor, pares, impares;
-    float promedioGeneral, promedioPares, promedioInpares, superiores;
+    int valor, pares = 0, impares = 0, superiores = 0;
+    float promedioGeneral, promedioPares, promedioInpares;
     for (int i = 0; i <= 7; i++){
         printf("Ingrese el número %d: ", i + 1);
 
@@ -24,10 +24,10 @@ int main() {
             promedioGeneral += valor;
     } 
 
-    printf("El promedio general es: %f", promedioGeneral / 8);
-    printf("El promedio de los valores pares es: %f", promedioPares / pares);
-    printf("El promedio de los valores inpares es: %f", promedioInpares / impares);
-    printf("La cantidad de números que superaron el valor 15 fueron: %f", superiores);
+    printf("El promedio general es: %.2f\n", promedioGeneral / 8);
+    printf("El promedio de los valores pares es: %.2f\n", promedioPares / pares);
+    printf("El promedio de los valores inpares es: %.2f\n", promedioInpares / impares);
+    printf("La cantidad de números que superaron el valor 15 fueron: %d\n", superiores);
     
     return 0;
 }

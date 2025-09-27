@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 int main () {
-    float valores, positivos, negativos, ceros;
+    float valores;
+    int positivos = 0, negativos = 0, ceros = 0;
+
     for ( int i = 0; i < 10; i++) {
-        printf("Ingrese el número %d: ", i);
+        printf("Ingrese el número %d: ", i + 1);
         scanf("%f", &valores);
         if (valores > 0) {
             positivos++;
@@ -15,6 +17,11 @@ int main () {
             ceros++;
         }
     }
+
+    printf("La cantidad de números positivos es: %d\n", positivos);
+    printf("La cantidad de números negativos es: %d\n", negativos);
+    printf("La cantidad de ceros es: %d\n", ceros);
+
     return 0;
 }
 

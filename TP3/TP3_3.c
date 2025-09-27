@@ -4,35 +4,29 @@
 #include <ctype.h>
 
 int main() {
-    int valor;
+    int valor, pares, impares;
     float promedioGeneral, promedioPares, promedioInpares, superiores;
-    for (int i = 0; i < 10; i++){
+    for (int i = 0; i <= 7; i++){
         printf("Ingrese el número %d: ", i + 1);
 
-        // Validar que se ingrese un número entero con isdigit función de ctype.h que verifica si el carácter es un dígito entre '0' y '9'.
         scanf("%d", &valor);
 
-        if (isdigit(valor)){
-            if (valor > 15) {
+        if (valor > 15) {
             superiores++;
-            }
-            //No me deja utilizar el operador ya que es un float y c no me lo deja hacer.
-            if (valor % 2 == 0) {
-                promedioPares += valor;
-            } else {
-                promedioInpares += valor;
-            }
-            promedioGeneral += valor;
-        } else {
-            printf("El valor ingresado no es valido, por favor ingrese números enteros.\n");
-            i--;
-            continue;
         }
+        if (valor % 2 == 0) {
+            promedioPares += valor;
+            pares++;
+        } else {
+            promedioInpares += valor;
+            impares++;
+        }
+            promedioGeneral += valor;
     } 
 
-    printf("El promedio general es: %f", promedioGeneral);
-    printf("El promedio de los valores pares es: %f", promedioPares);
-    printf("El promedio de los valores inpares es: %f", promedioInpares);
+    printf("El promedio general es: %f", promedioGeneral / 8);
+    printf("El promedio de los valores pares es: %f", promedioPares / pares);
+    printf("El promedio de los valores inpares es: %f", promedioInpares / impares);
     printf("La cantidad de números que superaron el valor 15 fueron: %f", superiores);
     
     return 0;

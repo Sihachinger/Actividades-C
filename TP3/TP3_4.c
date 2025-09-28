@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 int main() {
-    int cant = 30, totalNumeros = 30, indice, numeroIngresado, contadorRango1_10 = 0, contadorRango11_20 = 0, contadorRango21_30 = 0, contadorMayorA30 = 0;
+    int cant = 30, numeroIngresado, contadorRango1_10 = 0, contadorRango11_20 = 0, contadorRango21_30 = 0, contadorMayorA30 = 0;
     float porcentajeRango1_10, porcentajeRango11_20, porcentajeRango21_30, porcentajeMayorA30;
     
-    for(indice = 0; indice < cant; indice++) {
+    for(int i = 0; i < cant; i++) {
         printf("Ingrese un numero: ");
         scanf("%d", &numeroIngresado);
         if(numeroIngresado >= 1 && numeroIngresado <= 10) {

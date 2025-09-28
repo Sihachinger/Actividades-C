@@ -7,7 +7,7 @@ int main() {
     float monto, sumaTotal = 0, sumaSuperan40 = 0;
     int contadorSuperan40 = 0;
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 50; i++) {
         printf("Ingrese la patente del auto %d: ", i + 1);
         scanf("%s", patente);
         printf("Ingrese el monto de la multa numero %d: ", i + 1);
